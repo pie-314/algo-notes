@@ -1,6 +1,6 @@
-#What are Algorithms?
+# What are Algorithms?
 
-##Algorithms vs Program 
+## Algorithms vs Program 
 
 We start coding with writing the approach first also called the pseudocode.
 
@@ -8,21 +8,21 @@ We start coding with writing the approach first also called the pseudocode.
 
 **Programs** are written during implementation.
 
-##Priori Analysis vs Posteriori Testing
+## Priori Analysis vs Posteriori Testing
 
-###Priori Analysis
+### Priori Analysis
 - Algorithms
 - Independent of language
 - Hardware Independent
 - Time and space function
 
-###Posteriori Testing
+### Posteriori Testing
 - Program 
 - Language dependent
 - Hardware dependent
 - Watch time and Bytes
 
-##Characteristics of Algorithm
+## Characteristics of Algorithm
 
 - **Input**
  - 0 or more
@@ -35,21 +35,21 @@ We start coding with writing the approach first also called the pseudocode.
 - **Effectiveness**
  - It should be logical
 
-##How to write an Algorithm?
-`
+## How to write an Algorithm?
+```
 Algorithm swap(a,b)
 Begin
   temp = a;
   a = b;
   b = temp;
 end
-`
+```
 
-##How to analyze an Algorithms
--Time
--Space
--Data Transfer over network
--Power 
--CPU registers
+## How to analyze an Algorithms
+- Time
+- Space
+- Data Transfer over network
+- Power 
+- CPU registers
 
->Time and Space are main ones 
+> Time and Space are main ones 

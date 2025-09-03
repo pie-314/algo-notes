@@ -72,7 +72,25 @@ Algorithm Add(A, B, n){
   }
 }
 ```
-So we can say that the time complexity is 
-f(n) = 2n<sup>2</sup> + 2n +1
 
+### Time complexity
+So we can say that the time complexity is 
+
+**f(n) = 2n<sup>2</sup> + 2n + 1**
+
+And the order is 
 **O(n<sup>2</sup>)**
+
+### Space complexity 
+A = n<sup>2</sup>
+B = n<sup>2</sup>
+C = n<sup>2</sup>
+n = 1
+i = 1
+j = 1
+
+S(n) = 3n<sup>2</sup> + 3
+
+And degree is 
+O(n<sup>2</sup>))
+

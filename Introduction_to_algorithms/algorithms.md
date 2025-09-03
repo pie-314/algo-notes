@@ -52,4 +52,59 @@ end
 - Power 
 - CPU registers
 
-> Time and Space are main ones 
+>Time and Space are main ones 
+
+## Time Analysis
+
+Every **simple** statement in Algorithm takes one unit of time.
+
+Suppose the previous example
+
+```
+Algorithm swap(a,b)
+Begin
+  temp = a;  //1 unit of time
+  a = b;  //1 unit of time
+  b = temp;  //1 unit of time
+end
+```
+
+So here f(n) = 3
+This is a constant function of time.
+
+Usually we represent them as 
+O(1)
+>order of one
+
+Each sentence we say takes one unit of time exactly.
+>this is our consideration
+
+`temp = a`
+`x = 5*a+6*b`
+
+>In both the cases we say it takes one unit of time which is a under statement. The sentence is not appropriate if we go in detail because `x = 5*a+6*b` has one assignment and four arithmetics.
+
+
+## Space Analysis
+
+Every variable used is considered as unit of space.
+
+```
+Algorithm swap(a,b)
+Begin
+  temp = a;  //1 unit of space
+  a = b;  //1 unit of space
+  b = temp;  //1 unit of space
+end
+```
+
+S(n) = 3
+This is a constant function of space.
+Each sentence we say takes one unit of time exactly.
+>this is our consideration
+
+Usually we represent them as 
+O(1)
+>order of one
+
+

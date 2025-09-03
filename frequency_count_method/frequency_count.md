@@ -6,11 +6,11 @@
 This algorithm is used to find sum of elements in an array.
 ## Algorithm
 
-```
+```c
 Algorithm sum(A,n){
   s = 0;
   for (i=0;i<n;i++){
-    s = s+A\[i\];
+    s = s+A[i];
   }
   return s;
 }
@@ -20,15 +20,19 @@ Suppose we take array
 A = 80085
 n = 5 //number of values
 
-## Time complexity
+### Time complexity
 We know in the code block, 
+
 `s=0` --> 1unit
 
 And in 
+
 `for (i=0;i<n;i++)` --> n+1
 
 `i=0` --> 1 unit
+
 `i<n` --> n+1 unit
+
 `i++` --> n unit
 
 Since we are bothered about highest only so whole line has has time complexity as 
@@ -44,7 +48,7 @@ Therefore, f(n) = 1+(n+1)+n+1
 And we can say the order is 
 **O(n)**
 
-## Space Complexity
+### Space Complexity
 A --> n
 n --> 1
 s --> 1
@@ -55,15 +59,15 @@ And the order is
 **O(n)**
 
 
-Let's take another example
+## Let's take another example
 
 The following algorithm finds sum of two matrices (2D Arrays)
 
-```
+```c
 Algorithm Add(A, B, n){
   for (i = 0; i < n; i++) {       --> n+1 
     for (j = 0; j < n; j++) {        --> n * (n+1)
-      C\[i\]\[j\] = A\[i\]\[j\] + B\[i\]\[j\];      --> n*n
+      C[i][j] = A[i][j] + B[i][j];      --> n*n
     }
   }
 }
@@ -71,4 +75,4 @@ Algorithm Add(A, B, n){
 So we can say that the time complexity is 
 f(n) = 2n<sup>2</sup> + 2n +1
 
-O(n<sup>2</sup>) 
+**O(n<sup>2</sup>)**

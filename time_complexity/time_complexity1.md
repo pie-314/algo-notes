@@ -55,16 +55,14 @@ for (i=0;i<n;i++){
 Let's trace this algorithm
 
 i | j     | no of times(n)
---+-------+------------
+--|-------|------------
 0 | ~~0~~     | 0
---+-------+------------
 1 |**0**,~~1~~    | 1
---+-------+------------
 2 |**0**,**1**,~~2~~  | 2
-**.  .       .**
-**.  .       .**
-**.  .       .**
-**n          n**
+. |.       |.
+. |.       |.
+. |.       |.
+n |        |n
 
 And it continues  till n 
 So if i ask you till how many times it is executed in total,
@@ -117,14 +115,9 @@ for (i=1;i<n;i=i*2){
 
 
 Let's analyze it 
-```c
-i     | values 
-------+--------
-2<sup>0</sup>*2     | 2 <sup>1</sup>
-------+--------
-2<sup>1</sup>*2     | 2 <sup>2</sup>
-------+--------
-2<sup>2</sup>*2     | 2 <sup>3</sup>
-------+--------
-```
+| i expression      | value        |
+|-------------------|--------------|
+| 2<sup>0</sup> * 2 | 2<sup>1</sup> |
+| 2<sup>1</sup> * 2 | 2<sup>2</sup> |
+| 2<sup>2</sup> * 2 | 2<sup>3</sup> |
 

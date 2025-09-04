@@ -36,6 +36,7 @@ And in
 `i++` --> n unit
 
 Since we are bothered about highest only so whole line has has time complexity as 
+
 `n+1`
 
 `s = s+A\[i\];` --> n unit
@@ -43,16 +44,23 @@ Since we are bothered about highest only so whole line has has time complexity a
 `return s;` --> 1 unit
 
 Therefore, f(n) = 1+(n+1)+n+1
+
 **f(n)= 2n+3**
 
 And we can say the order is 
+
 **O(n)**
 
 ### Space Complexity
+
 A --> n
+
 n --> 1
+
 s --> 1
+
 i --> 1
+
 S(n) = n+3
 
 And the order is  
@@ -79,18 +87,26 @@ So we can say that the time complexity is
 **f(n) = 2n<sup>2</sup> + 2n + 1**
 
 And the order is 
+
 **O(n<sup>2</sup>)**
 
 ### Space complexity 
+
 A = n<sup>2</sup>
+
 B = n<sup>2</sup>
+
 C = n<sup>2</sup>
+
 n = 1
+
 i = 1
+
 j = 1
 
 S(n) = 3n<sup>2</sup> + 3
 
-And degree is 
+And degree is
+
 O(n<sup>2</sup>))
 

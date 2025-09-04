@@ -65,6 +65,7 @@ i | j     | no of times(n)
 n |        |n
 
 And it continues  till n 
+
 So if i ask you till how many times it is executed in total,
 it will be
 
@@ -74,10 +75,12 @@ Which can be written as
 f(n) = **∑(i=0 to n) i**
 
 Which can represented as
+
 f(n) = **n(n+1)/2** = **(n<sup>2</sup>+n)/2**
 
 So the degree is 
-O(n<sup>2</sup>)
+
+**O(n<sup>2</sup>)**
 
 
 Let's take another example,
@@ -92,16 +95,22 @@ for (i=1;p<= n; i++){
 Assumption, code will stop when `p>n`
 
 Here,
+
 p = k(k+1)/2
+
 p = (k<sup>2</sup> + k)/2
+
 p ~= k<sup>2</sup>
 
 Loop will stop when 
-k<sup>2</sup>>n
-k>n<sup>1/2</sup>
+
+**k<sup>2</sup> > n**
+
+k > n<sup>1/2</sup>
 
 So order is
-O(n<sup>1/2</sup>)
+
+**O(n<sup>1/2</sup>)**
 
 ### More examples
 
@@ -120,4 +129,41 @@ Let's analyze it
 | 2<sup>0</sup> * 2 | 2<sup>1</sup> |
 | 2<sup>1</sup> * 2 | 2<sup>2</sup> |
 | 2<sup>2</sup> * 2 | 2<sup>3</sup> |
+| .                 | .             |
+| .                 | .             |
+| 2<sup>k-1</sup> * 2 | 2<sup>k</sup> |
+
+
+The code will run till 
+
+i >= n
+
+We know 
+
+i = 2<sup>k</sup>
+
+So the equation becomes 
+
+2<sup>k</sup> = n
+
+k = log<sub>2</sub> n
+
+Therefore the order becomes
+
+O(log<sub>2</sub>n)
+
+> IF VALUE IS IN DECIMAL THE SEAL VALUE SHOULD BE TAKEN
+
+
+Let's take another example
+
+```c
+for (i = 0;i*i<n;i++){
+  statement;
+}
+```
+
+If you find order for this you will get,
+O(n<sup>1/2</sup>)
+
 

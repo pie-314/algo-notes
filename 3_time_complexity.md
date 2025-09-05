@@ -166,4 +166,75 @@ for (i = 0;i*i<n;i++){
 If you find order for this you will get,
 O(n<sup>1/2</sup>)
 
+Let's take another example
+```c
+for (i=0;i<n;i++) { --> n + 1
+  for (j=1;j<n;j=j*2){ --> n * log(n)
+    statement; --> n * log(n)
+  }
+}
+```
+
+So order is 
+O(n log(n))
+
+## Analysis of While Loop
+
+```c
+i = 0 --> 1
+while (i<n){ --> n+1
+  statement; --> n
+  i++ ; --> n
+}
+```
+
+f(n) = 3n + 2
+
+Order of n 
+O(n)
+
+Let's take another example
+
+```c
+a = 1 ; 
+while (a<b){
+  statement;
+  a = a * 2;
+}
+```
+
+Let's analyze it 
+| a expression      | value        |
+|-------------------|--------------|
+| 2<sup>0</sup> * 2 | 2<sup>1</sup> |
+| 2<sup>1</sup> * 2 | 2<sup>2</sup> |
+| 2<sup>2</sup> * 2 | 2<sup>3</sup> |
+| .                 | .             |
+| .                 | .             |
+| 2<sup>k-1</sup> * 2 | 2<sup>k</sup> |
+
+
+The code will run till (Terminate) 
+
+a >= b
+
+We know 
+
+a = 2<sup>k</sup>
+
+So the equation becomes 
+
+let b = n
+
+2<sup>k</sup> = n
+
+k = log<sub>2</sub> n
+
+Therefore the order becomes
+
+O(log<sub>2</sub>n)
+
+> IF VALUE IS IN DECIMAL THE SEAL VALUE SHOULD BE TAKEN
+> IT BEHAVES SIMILAR TO FOR LOOP
+
 
